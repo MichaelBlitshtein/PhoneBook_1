@@ -1,5 +1,6 @@
 package manager;
 
+import model.User;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,12 +21,15 @@ public class HelperUser extends HelperBase{
     }
 
     public void fillLoginRegistrationForm(String email,String password){
-        //for email
         type(By.cssSelector("[name='email']"),email);
-        //for password
         type(By.name("password"),password);
-
     }
+
+    public void fillLoginRegistrationForm(User user){
+        type(By.cssSelector("[name='email']"), user.getEmail());
+        type(By.name("password"), user.getPassword());
+    }
+
 
     public void submitLogin(){
         click(By.cssSelector("[name='login']"));
@@ -55,5 +59,11 @@ public class HelperUser extends HelperBase{
 
     public void submitRegistration() {
         click(By.cssSelector("[name='registration']"));
+    }
+
+    public void login(User user) {
+        openLoginRegistrationForm();
+        fillLoginRegistrationForm(user);
+        submitLogin();
     }
 }
