@@ -1,6 +1,7 @@
 package manager;
 
 import model.Contact;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -48,4 +49,17 @@ public class HelperContact extends HelperBase{
         }
         return false;
     }
+
+    public boolean isAddPageOpen() {
+        List <WebElement> list = wd.findElements(By.xpath("//b[text()='Save']"));
+        return list.size()>0;
+    }
+
+    public boolean isContactAddedByEmail(String email) {
+        WebElement emailFromSite = wd.findElement(By.cssSelector("//*[text()='jonson@gmail.com']"));
+
+        return emailFromSite.getText().equals(email);
+    }
+
+
 }
