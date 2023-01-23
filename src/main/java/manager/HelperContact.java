@@ -56,6 +56,7 @@ public class HelperContact extends HelperBase{
     }
 
     public boolean isContactAddedByEmail(String email) {
+
         WebElement emailFromSite = wd.findElement(By.cssSelector("//*[text()='jonson@gmail.com']"));
 
         return emailFromSite.getText().equals(email);
