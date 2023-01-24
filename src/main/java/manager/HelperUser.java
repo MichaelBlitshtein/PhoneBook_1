@@ -5,7 +5,10 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class HelperUser extends HelperBase{
@@ -46,6 +49,16 @@ public class HelperUser extends HelperBase{
     }
 
     public boolean isErrorMessageDisplayed(String message){
+      //  Alert alert = wd.switchTo().alert();
+     Alert alert = new WebDriverWait(wd, Duration.ofSeconds(9))
+                .until(ExpectedConditions.alertIsPresent());
+
+        String text = alert.getText();
+        alert.accept();
+        return text.contains(message);
+    }
+
+    public boolean isErrorMessageDisplayedOLD(String message){
         Alert alert = wd.switchTo().alert();
         String text = alert.getText();
 
@@ -53,7 +66,7 @@ public class HelperUser extends HelperBase{
         alert.accept();
         //click 'cancel'
         //alert.dismiss();
-       // alert.sendKeys("Hello");
+        // alert.sendKeys("Hello");
         return text.contains(message);
     }
 

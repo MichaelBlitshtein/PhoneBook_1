@@ -52,14 +52,23 @@ public class HelperContact extends HelperBase{
 
     public boolean isAddPageOpen() {
         List <WebElement> list = wd.findElements(By.xpath("//b[text()='Save']"));
+
+                              // wd.findElements(By.cssSelector("a.active[href='/add']"));
         return list.size()>0;
     }
 
     public boolean isContactAddedByEmail(String email) {
 
-        WebElement emailFromSite = wd.findElement(By.cssSelector("//*[text()='jonson@gmail.com']"));
+       List <WebElement> list = wd.findElements(By.cssSelector(".contact-item_card__2SOIM"));
+        for(WebElement el: list){
+            el.click();
+            String text = wd.findElement(By.cssSelector(".contact-item-detailed_card__50dTS")).getText();
+            if(text.contains(email)){
+                return true;
+            }
+        }
 
-        return emailFromSite.getText().equals(email);
+        return false;
     }
 
 

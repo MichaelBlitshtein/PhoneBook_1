@@ -3,6 +3,7 @@ package manager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.Keys;
 
 public class HelperBase {
     WebDriver wd;
@@ -17,6 +18,13 @@ public class HelperBase {
             element.click();
             element.clear();
             element.sendKeys(text);
+        }
+    }
+    public void pause(int time){
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
     }
 

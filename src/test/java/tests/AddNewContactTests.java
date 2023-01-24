@@ -63,7 +63,7 @@ public class AddNewContactTests extends TestBase{
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
         app.getHelperContact().click(By.xpath("//h3[text()='2654525897']"));
 
-        Assert.assertTrue(app.getHelperContact().isContactAddedByEmail(contact.getEmail()));
+     Assert.assertTrue(app.getHelperContact().isContactAddedByEmail(contact.getEmail()));
 
     }
 
@@ -82,6 +82,7 @@ public class AddNewContactTests extends TestBase{
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
+        app.getHelperContact().pause(50000);
         app.getHelperContact().submitContactForm();
 
         Assert.assertTrue(app.getHelperContact().isAddPageOpen());
@@ -107,6 +108,7 @@ public class AddNewContactTests extends TestBase{
         Assert.assertTrue(app.getHelperContact().isAddPageOpen());
     }
 
+
     @Test
     public void addContactWrongPhoneLength() {
 
@@ -123,6 +125,7 @@ public class AddNewContactTests extends TestBase{
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         app.getHelperContact().submitContactForm();
+
 
        Assert.assertTrue(app.getHelperUser().isErrorMessageDisplayed(" Phone not valid: Phone number must contain only digits! And length min 10, max 15!"));
     }
