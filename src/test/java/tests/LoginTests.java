@@ -1,8 +1,10 @@
 package tests;
+import manager.ListenerTestNG;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+@Listeners(ListenerTestNG.class)
 public class LoginTests extends TestBase{
     @BeforeMethod
     public void preCondition(){
@@ -26,10 +28,12 @@ public class LoginTests extends TestBase{
 
     @Test
     public void loginSuccessNew(){
+        logger.info("Login with valid data:  email:michael+1@gmail.com  &  password:Michael12345$ ");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("michael+1@gmail.com","Michael12345$");
         app.getHelperUser().submitLogin();
         Assert.assertTrue(app.getHelperUser().isLogged());
+        logger.info("Test success");
 
     }
 
@@ -40,7 +44,7 @@ public class LoginTests extends TestBase{
         app.getHelperUser().submitLogin();
         Assert.assertFalse(app.getHelperUser().isLogged());
         Assert.assertTrue(app.getHelperUser().isErrorMessageDisplayed("Wrong email or password"));
-
+        logger.info("Test success");
     }
     @Test
     public void loginWrongPassword(){
@@ -49,7 +53,7 @@ public class LoginTests extends TestBase{
        app.getHelperUser().submitLogin();
         Assert.assertFalse(app.getHelperUser().isLogged());
         Assert.assertTrue(app.getHelperUser().isErrorMessageDisplayed("Wrong email or password"));
-
+        logger.info("Test success");
     }
     @Test
     public void loginUnregisteredUser(){
@@ -58,5 +62,6 @@ public class LoginTests extends TestBase{
         app.getHelperUser().submitLogin();
         Assert.assertFalse(app.getHelperUser().isLogged());
         Assert.assertTrue(app.getHelperUser().isErrorMessageDisplayed("Wrong email or password"));
+        logger.info("Test success");
     }
 }

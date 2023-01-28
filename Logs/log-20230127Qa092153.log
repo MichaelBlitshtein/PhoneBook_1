@@ -1,0 +1,4 @@
+09:21:54.844  INFO  manager.ApplicationManager - All tests start in Chrome Browser
+09:21:55.390  INFO  manager.ApplicationManager - Current url --> https://telranedu.web.app/home
+09:21:55.421  INFO  tests.TestBase - The name of starts method is ---> loginUnregisteredUser
+09:22:01.852  INFO  tests.TestBase - Test success

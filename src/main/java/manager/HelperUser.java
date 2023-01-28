@@ -19,8 +19,8 @@ public class HelperUser extends HelperBase{
     }
 
     public void openLoginRegistrationForm(){
-
-        click(By.cssSelector("a[href='/login']"));
+      //  click(By.cssSelector("a[href='/login']"));
+        click(By.cssSelector("a[href='/l']"));
     }
 
     public void fillLoginRegistrationForm(String email,String password){

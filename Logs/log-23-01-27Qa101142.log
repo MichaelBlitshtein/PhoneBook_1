@@ -1,0 +1,36 @@
+10:11:44.094  INFO  manager.ApplicationManager - All tests start in Chrome Browser
+10:11:45.081  INFO  manager.ApplicationManager - Current url --> https://telranedu.web.app/home
+10:11:45.107  INFO  tests.TestBase - The name of starts method is ---> loginSuccess
+10:11:45.108  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //button[text()='Sign Out']
+10:11:50.152  INFO  manager.ListenerWD - After find elements  -->By.xpath: //button[text()='Sign Out']
+10:11:50.154  INFO  manager.ListenerWD - List size --> 0
+10:11:50.155  INFO  tests.TestBase - Login with valid data:  email:franky@gmail.com  &  password:FrankY123$ 
+10:11:50.156  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: a[href='/l']
+10:11:55.202  INFO  manager.ListenerWD - Test ends with error
+10:11:55.202  INFO  manager.ListenerWD - *********************
+10:11:55.202  INFO  manager.ListenerWD - Method methodfindElement
+10:11:55.203  INFO  manager.ListenerWD - ****************************
+10:11:55.203  INFO  manager.ListenerWD - InvocationTargetException getMessagenull
+10:11:55.203  INFO  manager.ListenerWD - ****************************
+10:11:55.204  INFO  manager.ListenerWD - InvocationTargetException getTargetExceptionorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/l']"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [485bd98cd8411dd1cb213a216d702ec9, findElement {using=css selector, value=a[href='/l']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:63432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63432/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 485bd98cd8411dd1cb213a216d702ec9
+10:11:55.205  INFO  manager.ListenerWD - ****************************
+10:11:55.205  INFO  manager.ListenerWD - InvocationTargetException getCauseorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/l']"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [485bd98cd8411dd1cb213a216d702ec9, findElement {using=css selector, value=a[href='/l']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:63432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63432/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 485bd98cd8411dd1cb213a216d702ec9
+10:11:55.206  INFO  manager.ListenerWD - ****************************
+10:11:55.206  INFO  manager.ListenerWD - Object targetChromeDriver: chrome on WINDOWS (485bd98cd8411dd1cb213a216d702ec9)
+10:11:55.207  INFO  manager.ListenerWD - ****************************
