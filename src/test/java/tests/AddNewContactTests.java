@@ -1,15 +1,17 @@
 package tests;
 
+import manager.ListenerTestNG;
 import model.Contact;
 import model.User;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.util.Random;
-
+@Listeners(ListenerTestNG.class)
 public class AddNewContactTests extends TestBase{
     @BeforeMethod
     public void preCondition(){
