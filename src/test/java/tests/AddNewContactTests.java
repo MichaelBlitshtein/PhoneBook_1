@@ -20,7 +20,7 @@ public class AddNewContactTests extends TestBase{
         }
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void addContactSuccess(){
         Random random = new Random();
         int i = random.nextInt(1000)+1000;

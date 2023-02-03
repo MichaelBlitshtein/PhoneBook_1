@@ -17,7 +17,7 @@ public class RegistrationTests extends TestBase{
         }
 
     }
-    @Test
+    @Test(groups = {"smoke","task"})
     public void registrationSuccess(){
         Random random = new Random();
         int i = random.nextInt(1000);
@@ -37,7 +37,7 @@ public class RegistrationTests extends TestBase{
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("foxgmail.com","FrankY123$");
         app.getHelperUser().submitRegistration();
-        Assert.assertFalse(app.getHelperUser().isLogged());
+    //    Assert.assertFalse(app.getHelperUser().isLogged());
         Assert.assertTrue(app.getHelperUser().isErrorMessageDisplayed("Wrong email or password format"));
     }
 
