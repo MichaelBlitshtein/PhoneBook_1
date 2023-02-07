@@ -1,0 +1,4 @@
+20:25:46.446  INFO  manager.ListenerTestNG - onStart ---Nopackage
+20:25:46.473  INFO  manager.ListenerTestNG - onTestStart ---registrationSuccess
+20:25:46.481  INFO  manager.ListenerTestNG - onTestFailure ---registrationSuccess
+20:25:46.484  INFO  manager.ListenerTestNG - onFinish ---Nopackage

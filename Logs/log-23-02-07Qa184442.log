@@ -1,0 +1,8 @@
+18:44:42.223  INFO  manager.ListenerTestNG - onStart ---Nopackage
+18:44:42.250  INFO  manager.ListenerTestNG - onTestStart ---addContactSuccess
+18:44:42.285  INFO  manager.ListenerTestNG - onTestFailure ---addContactSuccess
+18:44:42.289  INFO  manager.ListenerTestNG - onTestStart ---registrationSuccess
+18:44:42.294  INFO  manager.ListenerTestNG - onTestFailure ---registrationSuccess
+18:44:42.306  INFO  manager.ListenerTestNG - onTestStart ---loginWrongEmail
+18:44:42.307  INFO  manager.ListenerTestNG - onTestSkipped ---loginWrongEmail
+18:44:42.308  INFO  manager.ListenerTestNG - onFinish ---Nopackage

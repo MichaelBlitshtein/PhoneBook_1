@@ -14,7 +14,7 @@ import java.util.List;
 
 @Listeners(ListenerTestNG.class)
 public class LoginTests extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         if(app.getHelperUser().isLogged()){
             app.getHelperUser().logout();
@@ -95,7 +95,7 @@ public class LoginTests extends TestBase{
         Assert.assertTrue(app.getHelperUser().isLogged());
 
     }
-    @Test
+    @Test(groups = {"smoke"})
     public void loginWrongEmail(){
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("michaelgmail.com","Michael12345$");

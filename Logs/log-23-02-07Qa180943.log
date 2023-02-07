@@ -1,0 +1,115 @@
+18:09:45.855  INFO  manager.ApplicationManager - All tests start in Chrome Browser
+18:09:55.004  INFO  manager.ApplicationManager - Current url --> https://telranedu.web.app/home
+18:09:55.016  INFO  manager.ListenerTestNG - onStart ---Gradle test
+18:09:55.036  INFO  tests.TestBase - The name of starts method is ---> addContactSuccess
+18:09:55.038  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //button[text()='Sign Out']
+18:10:11.394  INFO  manager.ListenerWD - Test ends with error
+18:10:11.394  INFO  manager.ListenerWD - *********************
+18:10:11.394  INFO  manager.ListenerWD - Method method findElements
+18:10:11.395  INFO  manager.ListenerWD - ****************************
+18:10:11.397  INFO  manager.ListenerWD - InvocationTargetException getTargetException ---> org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c30a4b0e345e53f6ce2d9cbee48ec08d, findElements {using=xpath, value=//button[text()='Sign Out']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52447/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c30a4b0e345e53f6ce2d9cbee48ec08d
+18:10:11.397  INFO  manager.ListenerWD - ****************************
+18:10:11.397  INFO  manager.ListenerWD - Object target ChromeDriver: chrome on WINDOWS (c30a4b0e345e53f6ce2d9cbee48ec08d)
+18:10:11.398  INFO  manager.ListenerWD - ****************************
+18:10:11.402  INFO  manager.ListenerWD - Screen with error --->src/test/screenshots/screen-580.png
+18:10:43.452  INFO  manager.ListenerTestNG - onTestStart ---addContactSuccess
+18:10:43.452  INFO  manager.ListenerTestNG - onTestSkipped ---addContactSuccess
+18:10:43.454  INFO  manager.ListenerTestNG - onTestStart ---addContactSuccessRequiredFields
+18:10:43.454  INFO  manager.ListenerTestNG - onTestSkipped ---addContactSuccessRequiredFields
+18:10:43.455  INFO  manager.ListenerTestNG - onTestStart ---addContactWrongAddressFormat
+18:10:43.455  INFO  manager.ListenerTestNG - onTestSkipped ---addContactWrongAddressFormat
+18:10:43.456  INFO  manager.ListenerTestNG - onTestStart ---addContactWrongEmailFormat
+18:10:43.457  INFO  manager.ListenerTestNG - onTestSkipped ---addContactWrongEmailFormat
+18:10:43.457  INFO  manager.ListenerTestNG - onTestStart ---addContactWrongLastNameFormat
+18:10:43.458  INFO  manager.ListenerTestNG - onTestSkipped ---addContactWrongLastNameFormat
+18:10:43.458  INFO  manager.ListenerTestNG - onTestStart ---addContactWrongNameFormat
+18:10:43.458  INFO  manager.ListenerTestNG - onTestSkipped ---addContactWrongNameFormat
+18:10:43.459  INFO  manager.ListenerTestNG - onTestStart ---addContactWrongPhoneLength
+18:10:43.459  INFO  manager.ListenerTestNG - onTestSkipped ---addContactWrongPhoneLength
+18:10:43.461  INFO  tests.TestBase - The name of starts method is ---> loginSuccess
+18:10:43.462  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //button[text()='Sign Out']
+18:11:15.506  INFO  manager.ListenerWD - Test ends with error
+18:11:15.506  INFO  manager.ListenerWD - *********************
+18:11:15.506  INFO  manager.ListenerWD - Method method findElements
+18:11:15.506  INFO  manager.ListenerWD - ****************************
+18:11:15.507  INFO  manager.ListenerWD - InvocationTargetException getTargetException ---> org.openqa.selenium.WebDriverException: disconnected: unable to connect to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c30a4b0e345e53f6ce2d9cbee48ec08d, findElements {using=xpath, value=//button[text()='Sign Out']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52447/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c30a4b0e345e53f6ce2d9cbee48ec08d
+18:11:15.507  INFO  manager.ListenerWD - ****************************
+18:11:15.507  INFO  manager.ListenerWD - Object target ChromeDriver: chrome on WINDOWS (c30a4b0e345e53f6ce2d9cbee48ec08d)
+18:11:15.507  INFO  manager.ListenerWD - ****************************
+18:11:15.507  INFO  manager.ListenerWD - Screen with error --->src/test/screenshots/screen-652.png
+18:11:47.550  INFO  manager.ListenerTestNG - onTestStart ---loginSuccess
+18:11:47.550  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccess
+18:11:47.551  INFO  manager.ListenerTestNG - onTestStart ---loginSuccess
+18:11:47.552  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccess
+18:11:47.554  INFO  manager.ListenerTestNG - onTestStart ---loginSuccess
+18:11:47.554  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccess
+18:11:47.557  INFO  manager.ListenerTestNG - onTestStart ---loginSuccessModel
+18:11:47.565  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccessModel
+18:11:47.566  INFO  manager.ListenerTestNG - onTestStart ---loginSuccessModel
+18:11:47.567  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccessModel
+18:11:47.567  INFO  manager.ListenerTestNG - onTestStart ---loginSuccessModel
+18:11:47.568  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccessModel
+18:11:47.570  INFO  manager.ListenerTestNG - onTestStart ---loginSuccessModelFromFile
+18:11:47.570  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccessModelFromFile
+18:11:47.571  INFO  manager.ListenerTestNG - onTestStart ---loginSuccessModelFromFile
+18:11:47.572  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccessModelFromFile
+18:11:47.573  INFO  manager.ListenerTestNG - onTestStart ---loginSuccessModelFromFile
+18:11:47.574  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccessModelFromFile
+18:11:47.575  INFO  manager.ListenerTestNG - onTestStart ---loginSuccessNew
+18:11:47.576  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccessNew
+18:11:47.576  INFO  manager.ListenerTestNG - onTestStart ---loginSuccessNew
+18:11:47.577  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccessNew
+18:11:47.578  INFO  manager.ListenerTestNG - onTestStart ---loginSuccessNew
+18:11:47.578  INFO  manager.ListenerTestNG - onTestSkipped ---loginSuccessNew
+18:11:47.579  INFO  manager.ListenerTestNG - onTestFailure ---loginSuccessNew2
+18:11:47.580  INFO  manager.ListenerTestNG - onTestFailure ---loginSuccessNew2
+18:11:47.581  INFO  manager.ListenerTestNG - onTestStart ---loginUnregisteredUser
+18:11:47.581  INFO  manager.ListenerTestNG - onTestSkipped ---loginUnregisteredUser
+18:11:47.582  INFO  manager.ListenerTestNG - onTestStart ---loginWrongEmail
+18:11:47.583  INFO  manager.ListenerTestNG - onTestSkipped ---loginWrongEmail
+18:11:47.584  INFO  manager.ListenerTestNG - onTestStart ---loginWrongPassword
+18:11:47.584  INFO  manager.ListenerTestNG - onTestSkipped ---loginWrongPassword
+18:11:47.585  INFO  tests.TestBase - The name of starts method is ---> registrationSuccess
+18:11:47.586  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //button[text()='Sign Out']
+18:12:19.624  INFO  manager.ListenerWD - Test ends with error
+18:12:19.624  INFO  manager.ListenerWD - *********************
+18:12:19.624  INFO  manager.ListenerWD - Method method findElements
+18:12:19.624  INFO  manager.ListenerWD - ****************************
+18:12:19.624  INFO  manager.ListenerWD - InvocationTargetException getTargetException ---> org.openqa.selenium.WebDriverException: disconnected: unable to connect to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c30a4b0e345e53f6ce2d9cbee48ec08d, findElements {using=xpath, value=//button[text()='Sign Out']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52447/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c30a4b0e345e53f6ce2d9cbee48ec08d
+18:12:19.625  INFO  manager.ListenerWD - ****************************
+18:12:19.625  INFO  manager.ListenerWD - Object target ChromeDriver: chrome on WINDOWS (c30a4b0e345e53f6ce2d9cbee48ec08d)
+18:12:19.625  INFO  manager.ListenerWD - ****************************
+18:12:19.625  INFO  manager.ListenerWD - Screen with error --->src/test/screenshots/screen-529.png
+18:12:51.663  INFO  manager.ListenerTestNG - onTestStart ---registrationSuccess
+18:12:51.663  INFO  manager.ListenerTestNG - onTestSkipped ---registrationSuccess
+18:12:51.665  INFO  manager.ListenerTestNG - onTestStart ---registrationUserAlreadyExists
+18:12:51.665  INFO  manager.ListenerTestNG - onTestSkipped ---registrationUserAlreadyExists
+18:12:51.666  INFO  manager.ListenerTestNG - onTestStart ---registrationWrongEmail
+18:12:51.666  INFO  manager.ListenerTestNG - onTestSkipped ---registrationWrongEmail
+18:12:51.667  INFO  manager.ListenerTestNG - onTestStart ---registrationWrongPassword
+18:12:51.667  INFO  manager.ListenerTestNG - onTestSkipped ---registrationWrongPassword
+18:12:51.669  INFO  manager.ListenerTestNG - onFinish ---Gradle test
