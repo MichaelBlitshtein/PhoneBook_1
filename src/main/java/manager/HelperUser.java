@@ -22,7 +22,7 @@ public class HelperUser extends HelperBase{
       click(By.cssSelector("a[href='/login']"));
 
     }
-
+//for jenkins
     public void fillLoginRegistrationForm(String email,String password){
         type(By.cssSelector("[name='email']"),email);
         type(By.name("password"),password);
