@@ -1,0 +1,4 @@
+09:46:47.838  INFO  manager.ListenerTestNG - onStart ---Nopackage
+09:46:47.865  INFO  manager.ListenerTestNG - onTestStart ---registrationSuccess
+09:46:47.874  INFO  manager.ListenerTestNG - onTestFailure ---registrationSuccess
+09:46:47.877  INFO  manager.ListenerTestNG - onFinish ---Nopackage
